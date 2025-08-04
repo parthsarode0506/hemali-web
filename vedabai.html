@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golu Vedabai Can't Ignore Me 😜</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Comic+Neue&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffb6c1, #ffe4e1);
+            font-family: 'Comic Neue', cursive;
+            text-align: center;
+            padding: 30px;
+            overflow-x: hidden; overflow-y: auto;
+            animation: fadeIn 2s ease-in;
+        }
+        .loading-screen {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #ffe4e1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 999;
+            flex-direction: column;
+            animation: loadingFadeOut 1s forwards;
+            animation-delay: 2.5s;
+        }
+        .loading-text {
+            font-family: 'Pacifico', cursive;
+            font-size: 2em;
+            color: #ff69b4;
+            margin-top: 20px;
+            animation: popUp 1s infinite alternate;
+        }
+        @keyframes loadingFadeOut {
+            to { opacity: 0; visibility: hidden; }
+        }
+        .card {
+            background: white;
+            border-radius: 25px;
+            padding: 40px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+            max-width: 650px;
+            margin: auto;
+            position: relative;
+            z-index: 1;
+            animation: popUp 1s ease-out;
+        }
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff1493;
+            font-size: 3em;
+        }
+        p {
+            font-size: 1.3em;
+            color: #333;
+            margin: 20px 0;
+        }
+        .emoji {
+            font-size: 3.5em;
+            animation: bounce 1.5s infinite;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes popUp {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .poem {
+            margin: 25px 0;
+            font-style: italic;
+            color: #555;
+            background: #fff0f5;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+        }
+        .cheesy-line {
+            font-size: 1.5em;
+            color: #ff1493;
+            margin-top: 20px;
+            font-weight: bold;
+            animation: popUp 1s ease-out;
+        }
+        .emotional-text {
+            font-size: 2em;
+            color: #ff1493;
+            margin-top: 30px;
+            font-family: 'Pacifico', cursive;
+            animation: bounce 2s infinite;
+        }
+        .link-button {
+            background: #ff69b4;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            margin-top: 30px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background 0.3s, transform 0.2s;
+            z-index: 2;
+            position: relative;
+        }
+        .link-button:hover {
+            background: #e60073;
+            transform: scale(1.05);
+        }
+        .heart {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: pink;
+            border-radius: 50% 50% 0 0;
+            transform: rotate(-45deg);
+            animation: floatUp 5s linear infinite;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: pink;
+            border-radius: 50%;
+        }
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        .heart::after {
+            left: 10px;
+            top: 0;
+        }
+        @keyframes floatUp {
+            0% {
+                transform: translateY(0) rotate(-45deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-100vh) rotate(-45deg);
+                opacity: 0;
+            }
+        }
+        .firework {
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background: gold;
+            border-radius: 50%;
+            animation: explode 0.7s ease-out forwards;
+        }
+        @keyframes explode {
+            0% { transform: scale(1); opacity: 1; }
+            100% { transform: scale(5); opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="loading-screen">
+        <img src="https://emojicdn.elk.sh/🥺" alt="Loading Emoji" style="width: 80px;">
+        <div class="loading-text">Golu Vedabai Special is Loading... 😘</div>
+    </div>
+
+    <audio autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-buddy.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Floating Hearts -->
+    <div class="heart" style="left: 10%; animation-delay: 0s;"></div>
+    <div class="heart" style="left: 30%; animation-delay: 1s;"></div>
+    <div class="heart" style="left: 50%; animation-delay: 2s;"></div>
+    <div class="heart" style="left: 70%; animation-delay: 3s;"></div>
+    <div class="heart" style="left: 90%; animation-delay: 4s;"></div>
+
+    <div class="card">
+        <div class="emoji">🥺👉👈</div>
+        <h1>Vedabai, Stop Ignoring Me! 😝</h1>
+        <p>You can scroll but you can't escape my cheesiness! 😂<br>
+        This website is certified Golu-Proof! 💯✨</p>
+
+        <div class="poem">
+            <strong>Golu's Cheesy Special</strong><br>
+            Roses are red, violets are blue,<br>
+            Vedabai, ignoring me? That's so not you!<br>
+            I made this site, with all my heart,<br>
+            Now stop being a ghost and play your part! 🥰
+        </div>
+
+        <div class="poem">
+            <strong>Pyar Ki Dhamki Poem</strong><br>
+            Golu ji ki kasam, sun le meri baat,<br>
+            Ignore mat kar, tu hai meri heartbeat ki raftaar.<br>
+            Yeh website sirf tere liye banayi hai maine,<br>
+            Ab toh reply de warna aur bhi banaunga naye naye! 😂❤️
+        </div>
+
+        <div class="poem">
+            <strong>Muffin & Maggi Vibes</strong><br>
+            Tu meri muffin, main tera chai,<br>
+            Tera bina toh lagta hai sab kuch bye-bye.<br>
+            Vedabai, tu meri Maggi wali vibe hai,<br>
+            Tujhse baat na ho toh sab kuch dull aur dry hai! 😋
+        </div>
+
+        <div class="poem">
+            <strong>Reply Nahi Toh Poetry Attack!</strong><br>
+            Har din ek poem, har line mein tera naam,<br>
+            Ab ignore karegi toh daily milega ye spam!<br>
+            Golu ki dosti ignore karne ka fine lagega,
+            Ek cute sa smile aur ek reply milega? 😏
+        </div>
+
+        <div class="emotional-text">
+            Madam ji, Mann Jao Yaar... 😢<br>
+            Mann Jaye to Insta Pe Online Aajao Ab...<br>
+            I MISS YOU 🥺❤️
+        </div>
+
+        <div class="cheesy-line">
+            🌟 “Vedabai, ab toh reply kar warna main tumhare sapno mein bhi website leke aaunga!” 🌟
+        </div>
+
+        <a href="https://youtu.be/RYhexwNtB4Q?si=GlhpZwf1H-jI5jnC" class="link-button" target="_blank">He Song Mazya Golya Sati Purna Eyk 🎶</a>
+<a href="https://www.instagram.com/sinthera_parth.exe?igsh=cnMycWE3OGxxOGwx" class="link-button" target="_blank" onclick="launchFireworks(event)">Ab To Text Karlo 📲</a>
+        
+    </div>
+
+    <script>
+        function launchFireworks(event) {
+            event.preventDefault();
+            for (let i = 0; i < 30; i++) {
+                let firework = document.createElement('div');
+                firework.className = 'firework';
+                firework.style.left = (Math.random() * window.innerWidth) + 'px';
+                firework.style.top = (Math.random() * window.innerHeight) + 'px';
+                document.body.appendChild(firework);
+                setTimeout(() => { firework.remove(); }, 700);
+            }
+            setTimeout(() => { window.open('https://www.instagram.com/sinthera_parth.exe?igsh=cnMycWE3OGxxOGwx', '_blank'); }, 800);
+        }
+    </script>
+</body>
+</html>
